@@ -29,7 +29,7 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-  - story : kegiatan comingsoon
+- story : kegiatan comingsoon
   steps :
   - intent : greet
   - action : utter_greet
@@ -49,9 +49,9 @@ stories:
   - intent : Goodbye
   - action : utter_Goodbye
 
-  - story: bot
-    steps:
-      - intent: benefit
-      - action: utter_benefit
-      - intent: penolakan
-      - action: utter_penolakan
+- story: bot
+  steps:
+    - intent: benefit
+    - action: utter_benefit
+    - intent: penolakan
+    - action: utter_penolakan
