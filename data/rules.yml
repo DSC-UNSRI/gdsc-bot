@@ -12,6 +12,31 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: Memberi informasi tentang gdsc
+  steps:
+  - intent: inquire_apa_gdsc
+  - action: utter_inquire_apa_gdsc
+
+- rule: Memberi jawaban event terdekat
+  steps:
+  - intent: NearestEvent
+  - action: utter_NearestEvent
+
+- rule: Memberi salam berpisah
+  steps:
+  - intent: Goodbye
+  - action: utter_Goodbye
+
+- rule: Memberi tahu benefit gdsc
+  steps:
+  - intent: benefit
+  - action: utter_benefit
+
+- rule: Menjawab penolakan
+  steps:
+  - intent: penolakan
+  - action: utter_penolakan
+
 - rule: Menjawab nama pengurus gdsc unsri
   steps:
   - intent: pengurus_gdsc
@@ -21,4 +46,3 @@ rules:
   steps:
   - intent: siapa_saya
   - action: utter_siapa_saya
-
