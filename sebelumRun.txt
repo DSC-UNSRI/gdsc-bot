@@ -1,0 +1,13 @@
+pre eq=======
+install python 3.7 atau python 3.8
+
+install rasa versi 2.8.6 
+  pip3 install rasa==2.8.6
+
+
+command============
+rasa init
+
+rasa train
+
+rasa shell

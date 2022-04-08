@@ -1,0 +1,48 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Memberi informasi tentang gdsc
+  steps:
+  - intent: inquire_apa_gdsc
+  - action: utter_inquire_apa_gdsc
+
+- rule: Memberi jawaban event terdekat
+  steps:
+  - intent: NearestEvent
+  - action: utter_NearestEvent
+
+- rule: Memberi salam berpisah
+  steps:
+  - intent: Goodbye
+  - action: utter_Goodbye
+
+- rule: Memberi tahu benefit gdsc
+  steps:
+  - intent: benefit
+  - action: utter_benefit
+
+- rule: Menjawab penolakan
+  steps:
+  - intent: penolakan
+  - action: utter_penolakan
+
+- rule: Menjawab nama pengurus gdsc unsri
+  steps:
+  - intent: pengurus_gdsc
+  - action: utter_pengurus_gdsc
+
+- rule: Menjawab informasi bot
+  steps:
+  - intent: siapa_saya
+  - action: utter_siapa_saya
